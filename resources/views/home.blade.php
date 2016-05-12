@@ -7,24 +7,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Dashboard</div>
                 <div class="panel-body">
-                    <table class="table table-hover table-responsive">
-                        <thead>
-                            <tr>
-                                <th>Village Name</th>
-                                <th>Village Address</th>
-                                <th>No. of Units</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach($villages as $v)
-                                <tr>
-                                    <td>{{$v->v_name}}</td>
-                                    <td>{{$v->v_address}}</td>
-                                    <td>{{$v->Unit->count()}}</td>
-                                </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
+                    You are logged in!!
                 </div>
             </div>
         </div>

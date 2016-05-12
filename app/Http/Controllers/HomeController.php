@@ -26,18 +26,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return redirect('/villages');
-    }
-
-    public function viewVillages()
-    {
-        $villages = Village::orderBy('v_name')->get();
-        return view('home')->with('villages', $villages);
-    }
-
-    public function viewVillage($id)
-    {
-        $village = Village::findOrFail($id);
-        return view('home')->with('village', $village);
+        return view('home');
     }
 }

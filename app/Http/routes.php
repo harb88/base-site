@@ -9,12 +9,6 @@ Route::auth();
 Route::get('/home', 'HomeController@index');
 
 /**
- * Village pages
- */
-Route::get('/villages', ['middleware' => ['ability:root,view-villages'], 'uses' => 'HomeController@viewVillages']);
-Route::get('/village/{id}', ['middleware' => ['ability:root,view-villages'], 'uses' => 'HomeController@viewVillage']);
-
-/**
  * Admin group
  */
 Route::group(['prefix' => 'admin'], function() {
