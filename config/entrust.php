@@ -19,7 +19,7 @@ return [
     | the role if it is in a different namespace.
     |
     */
-    'role' => 'app\Models\Role',
+    'role' => 'rvs\Models\Role',
 
     /*
     |--------------------------------------------------------------------------
@@ -40,7 +40,7 @@ return [
     | Update the permission if it is in a different namespace.
     |
     */
-    'permission' => 'app\Models\Permission',
+    'permission' => 'rvs\Models\Permission',
 
     /*
     |--------------------------------------------------------------------------
