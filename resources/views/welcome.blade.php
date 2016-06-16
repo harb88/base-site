@@ -8,7 +8,7 @@
                 <div class="panel-heading">Welcome</div>
 
                 <div class="panel-body">
-                    Welcome to the Retirement Village Management Portal!
+                    Welcome to the Ferguson Cannon Client Portal!
                 </div>
             </div>
         </div>
