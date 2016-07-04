@@ -22,6 +22,12 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
+                                    <label for="entity" class="col-md-4 control-label">Entity ID</label>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" name="entity" id="entity" placeholder="Entity ID" value="{{$user->Entity->entity_id}}">
+                                    </div>
+                                </div>
+                                <div class="form-group">
                                     <div class="col-md-6 col-md-offset-4">
                                         <a href="{{url('/admin/manage-users')}}" class="btn btn-default">Cancel</a>
                                         <button type="submit" class="btn btn-primary">Update</button>

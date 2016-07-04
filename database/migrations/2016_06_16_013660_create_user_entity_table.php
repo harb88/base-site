@@ -14,12 +14,11 @@ class CreateUserEntityTable extends Migration
     {
         Schema::create('entity_user', function (Blueprint $table) {
             //entity id
-            $table->string('entity_id')->unique();
+            $table->string('entity_id');
 
             //user id
             $table->integer('user_id')
-                ->unsigned()
-                ->unique();
+                ->unsigned();
             $table->foreign('user_id')
                 ->references('id')->on('users');
         });

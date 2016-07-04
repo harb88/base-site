@@ -4,6 +4,7 @@ namespace app\Http\Controllers\Admin;
 
 use app\Http\Controllers\Controller;
 use app\Http\Requests;
+use app\Models\Entity_User;
 use Illuminate\Http\Request;
 
 use app\Models\User;
@@ -80,6 +81,9 @@ class UsersController extends Controller
             $user->name = $request->input('name');
             $user->email = $request->input('email');
             $user->save();
+
+            $user->Entity->entity_id = $request->input('entity');
+            $user->Entity->save();
 
             //redirect to manage-users route with success message
             return redirect('admin/manage-users')->withErrors(['!success!User '.$user->name.' updated successfully!', "!warning!Please note: If the user's email address was changed they must now use the new email to log in."]);
