@@ -20,10 +20,17 @@ class PermissionsController extends Controller
         $this->middleware('auth');
     }
 
+    /**
+     * Add permission view action
+     * /admin/add-permission
+     * @param Request $request
+     * @return mixed
+     */
     public function addPermission(Request $request)
     {
         if($request->isMethod('post'))
         {
+
             //validate request data
             $this->validate($request, [
                 'name' => 'required|max:255',
@@ -46,6 +53,13 @@ class PermissionsController extends Controller
         }
     }
 
+    /**
+     * Edit permission view action
+     * /admin/edit-permission/{id}
+     * @param Request $request
+     * @param $id
+     * @return mixed
+     */
     public function editPermission(Request $request, $id)
     {
         $permission = Permission::find($id);
@@ -72,6 +86,13 @@ class PermissionsController extends Controller
         }
     }
 
+    /**
+     * Delete permission view action
+     * /admin/delete-permission/{id}
+     * @param Request $request
+     * @param $id
+     * @return mixed
+     */
     public function deletePermission(Request $request, $id)
     {
         $permission = Permission::find($id);

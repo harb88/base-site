@@ -9,6 +9,13 @@ Route::auth();
 Route::get('/home', 'HomeController@index');
 
 /**
+ * User group
+ */
+Route::group(['prefix' => 'user'], function() {
+    Route::get('/my-details', 'UserController@myDetails');
+});
+
+/**
  * Admin group
  */
 Route::group(['prefix' => 'admin'], function() {
@@ -69,5 +76,3 @@ Route::group(['prefix' => 'admin'], function() {
     //delete user roles
     Route::get('/delete-user-role/{user_id}/{role_id}', ['middleware' => ['ability:root,delete-user-roles'], 'uses' => 'Admin\UsersController@deleteUserRole']);
 });
-
-Route::get('/execute', 'ExecuteController@index');

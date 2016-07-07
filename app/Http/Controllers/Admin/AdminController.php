@@ -23,11 +23,9 @@ class AdminController extends Controller
     }
 
     /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Http\Response
+     * Show the admin dashboard
+     * @return mixed
      */
-
     public function manageAdmin()
     {
         return view('admin.manage-admin');
