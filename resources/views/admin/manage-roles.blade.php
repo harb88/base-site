@@ -5,7 +5,9 @@
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Roles</div>
+                    <div class="panel-heading">
+                        <h4>Roles</h4>
+                    </div>
                     <div class="panel-body">
                         <div>
                             <table class="table table-hover">
@@ -63,7 +65,11 @@
                     </div>
                 </div>
                 <div class="panel panel-default">
-                    <div class="panel-heading">Permissions</div>
+                    <div class="panel-heading">
+                        <h4>
+                            Permissions
+                        </h4>
+                    </div>
                     <div class="panel-body">
                         <div>
                             <table class="table table-hover table-responsive">

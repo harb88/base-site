@@ -7,7 +7,9 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Dashboard</div>
                 <div class="panel-body">
-                    You are logged in!!
+                    You are logged in!! <br/>
+                    Currently operating in {{config("app.env")}} mode.<br/>
+                    Connected to {{config("lawmaster.service")}}. <br/>
                 </div>
             </div>
         </div>

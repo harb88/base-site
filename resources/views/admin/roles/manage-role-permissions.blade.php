@@ -6,8 +6,10 @@
             <div class="col-md-10 col-md-offset-1">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <a href="{{url('/admin/manage-roles')}}" class="btn btn-default btn-sm">Back</a>
-                         {{$role->display_name}} permissions
+                        <h4>
+                            <a href="{{url('/admin/manage-roles')}}" class="btn btn-default btn-sm">Back</a>
+                            {{$role->display_name}} permissions
+                        </h4>
                     </div>
 
                     <div class="panel-body">

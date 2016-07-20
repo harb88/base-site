@@ -6,13 +6,16 @@ Route::get('/', function() {
 
 Route::auth();
 
-Route::get('/home', 'HomeController@index');
+Route::get('/dashboard', 'DashboardController@index');
 
 /**
  * User group
  */
 Route::group(['prefix' => 'user'], function() {
-    Route::get('/my-details', 'UserController@myDetails');
+    Route::get('settings', 'UserController@settings');
+    Route::get('settings/edit-personal-details', 'UserController@editPersonalDetails');
+    Route::post('settings/edit-personal-details', 'UserController@editPersonalDetails');
+
 });
 
 /**
